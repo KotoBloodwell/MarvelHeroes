@@ -27,9 +27,7 @@ ArrayList<SuperHero> superHeroes;
 
         Bundle bundle = getArguments();
         superHeroes = bundle.getParcelableArrayList(MainActivity.ARRAY_LIST_HEROES);
-
-
-
+        HeroAdapter heroAdapter = new HeroAdapter(superHeroes, getContext());
 
     }
 
